@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roblox Script Hub</title>
+</head>
+<body>
+    <h1>Click to Copy the Script</h1>
+    <button onclick="copyScript()">Copy Script</button>
+    <script>
+        function copyScript() {
+            navigator.clipboard.writeText('loadstring(game:HttpGet("https://yourserver.com/script", true))()')
+                .then(() => alert("Script copied!"))
+                .catch(err => alert("Error copying script: " + err));
+        }
+    </script>
+</body>
+</html>
